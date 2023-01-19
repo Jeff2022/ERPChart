@@ -1,0 +1,44 @@
+<!--index.wxml-->
+
+<!-- <view style="text-align: center;font-size:35rpx;">
+  <text bindtap="onTap1" id="text1" style="color: {{textColor1}};">沪深300</text>
+  <text>  |  </text>
+  <text bindtap="onTap2" id="text2" style="color: {{textColor2}};">上证50</text>
+  <text>  |  </text>
+  <text bindtap="onTap3" id="text3" style="color: {{textColor3}};">创业板</text>
+  <text>  |  </text>
+  <text bindtap="onTap4" id="text4" style="color: {{textColor4}};">中证500</text>
+</view> -->
+
+<view class="container" >
+    <ec-canvas id="mychart" canvas-id="mychart-line" ec="{{ ec }}">
+    </ec-canvas>
+
+    <PeriodSegment id="PeriodSeg"  bindperiodSeg_event="periodSeg_EventListener">
+    </PeriodSegment>
+
+  </view>
+
+<!-- <view style="background-color: #EEEEEE"> -->
+<!-- </view> -->
+
+
+<view style="background-color: #ECF4FA;border-radius: 10rpx; border: 2rpx solid #DFDFDF; margin-top: 10rpx;margin-bottom: 0rpx; padding: 30rpx 50rpx 30rpx 50rpx;">
+<text class="DataText">统计时间：{{start_day}} - {{end_day}}</text>
+<text class="DataText">\n均值：{{mean_display}}</text>
+<text class="DataText">\n标准差：{{sd_display}}</text>
+<text class="DataText">\n历史百分位：</text><text class="DataText">{{percentile}}%</text>
+
+<!-- <text>\n</text> -->
+</view>
+<view>
+  <text class="DataText_Tips">(注：这里使用的是滚动市盈率)</text>
+
+  <!-- <text>数据计算说明：\n</text> -->
+  <text>\n\n股权风险溢价公式：  1/PE - 十年期国债收益率</text>
+  <text>\n\n该值越大，表明股票相较于债券回报越大，\n越小表明债券的吸引力更大。</text>
+</view>
+
+<view>
+<!-- <text>股权风险溢价公式：股票回报率 - 无风险收益率</text> -->
+</view>

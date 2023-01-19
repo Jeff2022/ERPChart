@@ -1,0 +1,26 @@
+/* components/PeriodSegment/index.wxss */
+
+
+.intro {
+  display: flex;
+  flex-direction: row;
+}
+.TimeButton{
+  /* border: 1px solid #70bcf6;  */
+  border: 0.5rpx solid rgb(40,160,245); 
+  border-radius: 26px;  
+  /* color: rgb(0,0,0); */
+  font-size: 28rpx;
+  font-weight: 400;
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  /* padding: 8rpx;  */
+  height: 52rpx;
+  padding: 10rpx 10rpx 4rpx 15rpx;
+  /* margin-left: 15rpx;
+  margin-right: 15rpx; */
+  /* background-color: white; */
+}
+
+.TimeButton::after{
+  border: none; 
+}

@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/bond_y10/index",
+    "pages/other/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f1f1f1",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "投资数说"
+  },
+
+  "tabBar": {
+    "color": "#ACADBE",
+    "backgroundColor": "#F1F1F1",
+    "selectedColor":"#33a3ff", 
+    "borderStyle": "black",
+
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "股权风险溢价",
+        "iconPath": "/images/tab1.png",
+        "selectedIconPath": "/images/tab1_h.png"
+      },
+      {
+        "pagePath": "pages/bond_y10/index",
+        "text": "十年期国债",
+        "iconPath": "/images/tab2.png",
+        "selectedIconPath": "/images/tab2_h.png"
+      }
+    ]
+  },
+
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

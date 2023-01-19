@@ -1,0 +1,28 @@
+/**index.wxss**/
+
+view {
+  margin: 20rpx;
+  font-size: 32rpx;
+}
+
+ec-canvas {
+  width: 740rpx;
+  height: 700rpx;
+  margin: 5;
+}
+
+.DataText {
+  font-size: 29rpx;
+  font-weight: 380;
+  color: rgb(33,33,33);
+}
+.DataText_Small {
+  font-size: 26rpx;
+  font-weight: 380;
+  color: rgb(33,33,33);
+}
+.DataText_Tips {
+  font-size: 26rpx;
+  font-weight: 380;
+  color: rgb(99,99,99);
+}

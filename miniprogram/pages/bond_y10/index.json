@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "ec-canvas": "../../utils/ec-canvas/ec-canvas",
+    "PeriodSegment": "../../components/PeriodSegment2/index"
+
+  },
+  "navigationBarTitleText": "十年期国债收益率"  
+
+}

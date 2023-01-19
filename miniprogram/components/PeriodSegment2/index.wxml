@@ -1,0 +1,8 @@
+<!--components/PeriodSegment/index.wxml-->
+<view class="intro" style="display: flex; align-items: center; margin-top: 0rpx; margin-left: 0rpx;margin-right: 0rpx; margin-bottom: 30rpx;">
+    <text style="color: #555555;font-size: 30rpx;">时间范围：</text>
+    <button class="TimeButton" style="width: {{timeButtonWidth}}; color: {{timeColor1}};background-color: {{timeBgColor1}};margin-right: 15rpx;" catchtap="timeTap1">1月</button>
+    <button class="TimeButton" style="width: {{timeButtonWidth}}; color: {{timeColor2}};background-color: {{timeBgColor2}};margin-right: 15rpx;" catchtap="timeTap2">1年</button>
+    <button class="TimeButton" style="width: {{timeButtonWidth}}; color: {{timeColor3}};background-color: {{timeBgColor3}}; margin-right: 15rpx;" catchtap="timeTap3">5年</button>
+    <button class="TimeButton" style="width: {{timeButtonWidth}}; color: {{timeColor4}};background-color: {{timeBgColor4}};" catchtap="timeTap4">全部</button>
+</view>

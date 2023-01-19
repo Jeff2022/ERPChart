@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "ec-canvas": "../../utils/ec-canvas/ec-canvas",
+    "PeriodSegment": "../../components/PeriodSegment/index"
+  },
+  "navigationBarTitleText": "股权风险溢价"  
+
+}

@@ -1,0 +1,34 @@
+<!--pages/bond_y10/index.wxml-->
+<!-- <view> -->
+  <view class="container">
+    <ec-canvas id="mychart1" canvas-id="mychart-line" ec="{{ec}}"></ec-canvas>
+
+    <PeriodSegment id="PeriodSeg" bindperiodSeg_event="periodSeg_EventListener">
+    </PeriodSegment>
+
+  <!-- </view> -->
+
+
+</view>
+
+
+<view class="table" style="margin-left: 80rpx;margin-right: 80rpx;padding: 20rpx 10rpx 20rpx 10rpx;">
+  <text class="DataText">最近5个交易日：</text>
+  <view class="tr bg-w">
+    <view class="th">日期</view>
+    <view class="th">收盘(%)</view>
+    <view class="th ">涨跌</view>
+  </view>
+  <block wx:for="{{last5Days}}" wx:key="{{day}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td" style="font-size: 27rpx;">{{item.day}}</view>
+      <view class="td">{{item.close}}</view>
+      <view class="td" style="color: {{item.change>0?'#ff0000':'#60C070'}} ;">{{item.change>0?'+':''}}{{item.change}}%</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td" style="font-size: 27rpx;">{{item.day}}</view>
+      <view class="td">{{item.close}}</view>
+      <view class="td" style="color: {{item.change>0?'#ff0000':'#60C070'}} ;" >{{item.change>0?'+':''}}{{item.change}}%</view>
+    </view>
+  </block>
+  </view>
